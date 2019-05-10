@@ -1,0 +1,19 @@
+default: &default
+ adapter: postgresql
+ pool: 5
+ timeout: 5000
+development:
+ <<: *default
+ database: development_instagram
+ user: postgres
+ password: dunglovetruc1994
+test:
+ <<: *default
+ database: test_instagram
+ user: postgres
+ password: dunglovetruc1994
+production:
+ <<: *default
+ database: production_instagram
+ user: postgres
+ password: dunglovetruc1994
